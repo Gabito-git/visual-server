@@ -1,0 +1,27 @@
+.u-align-items-center{align-items: center;}
+.u-center-text{text-align: center;}
+.u-margin-top-medium{margin-top: 5rem !important;}
+
+.u-margin-bottom-small{margin-bottom: 2rem;}
+.u-margin-bottom-medium{margin-bottom: 5rem;}
+.u-margin-bottom-large{margin-bottom: 10rem !important;}
+.u-margin-bottom-huge{margin-bottom: 15rem !important;}
+
+.u-margin-left-custom{margin-left: 18.96rem;}
+
+.u-float-right{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+// .show-up{
+    
+//     animation:moveInUp 1s;
+//     opacity: 1 !important;
+    
+// }

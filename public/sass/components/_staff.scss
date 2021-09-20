@@ -1,0 +1,142 @@
+.staff{
+    position: relative;
+    transition: all .2s; 
+
+    &:hover{
+        outline: 1rem solid $color-secondary-light;
+    }
+   
+    &__img-box{
+        position: relative;
+        
+    }
+
+    &__img{
+        display: block;      
+    }
+   
+    &__text-image{
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $color-white;           
+    }
+
+    &__name{        
+        font-weight: 900;
+        font-size: 2.7rem;
+        border-bottom: 1px solid $color-secondary-light;
+    }
+
+    &__position{
+        display: inline-block;
+        font-size: 1.4rem;
+        background-color: $color-secondary-light;
+        margin-top: 1rem;
+    }
+
+    &__about{
+        position: absolute;
+        top: -1rem; 
+        text-align: center;  
+        height: 38rem;
+        width: 111%;
+        background-color: rgba($color-secondary-light, 0.9);
+        padding: 3rem;  
+        color: $color-white;        
+        opacity: 0;
+        visibility: hidden;        
+        transition: all .3s ; 
+        font-size: 1.4rem; 
+    }
+
+    &__about--r{
+        left: 0;
+    }
+
+    &__about--l{
+        right: 0;
+    }
+
+
+    &:hover  &__about--r{
+        left: 100%;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    &:hover  &__about--l{
+        right: 100%;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }      
+
+    &__sentence{        
+        font-size: 2.2rem;
+    }
+
+    &__about-text{
+        
+        border-bottom: 1px solid $color-white;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info{
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $color-white;
+        margin-bottom: 4rem;
+    }
+
+    &__about-mail{        
+        float: left;
+        width: 50%;        
+    }
+
+    &__icon{
+        margin-right: 1rem;
+        font-size: 1.5rem;        
+    }
+
+    &__media{
+        font-size: 2.5rem;
+
+        a{
+            &:link,
+            &:visited{
+                color: $color-primary;
+                cursor: pointer;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    // subalternos
+
+   
+
+    &__text-image--sub{
+        opacity: 0;
+        bottom: -10rem;       
+        width: 70%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;        
+    }
+
+    &--sub:hover &__text-image--sub{
+        opacity: 1;
+        visibility: visible;
+        bottom: 2rem;
+    }
+        
+    
+
+    
+
+    
+}

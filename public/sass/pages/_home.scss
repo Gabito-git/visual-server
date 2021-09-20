@@ -1,0 +1,51 @@
+.section-about{
+    padding: 3rem 0 10rem 0; 
+    
+    &__text-box{
+        width: 90%;
+    }
+}
+
+.politic{  
+    padding: 2rem;  
+    margin-top: -8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    text-align: center;
+    color: $color-white;  
+    height: 29rem; 
+
+    &__box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+    &--mision{
+        // padding-left: 18.8rem;
+        // padding-right: 8rem;
+        background-image: linear-gradient(rgba($color-primary-light,.3), rgba($color-primary,.3)),url(../img/mision.jpg);        
+        
+    }
+
+    &--vision{
+        // padding-right: 18.96rem;
+        background-image:linear-gradient(rgba($color-secondary-light,.4), rgba($color-secondary,.4)), url(../img/vision.jpg);
+    }
+
+    &__text{
+        font-size: 1.6rem;
+        // color: $color-white;
+    }
+}
+
+.section-services{
+    padding: 10rem 0 7rem 0;
+    height: 90rem;
+    position: relative;
+}
+
+.section-staff{
+    padding: 12rem 0;
+}

@@ -1,0 +1,71 @@
+.card{
+    
+    width: 30rem;
+    height: 45rem;
+    position: absolute;
+    // background-color: lightblue;
+    
+    perspective: 150rem;   
+
+    &__side{
+        text-align: center;
+        padding: 3rem;
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .8s;
+        background-image: linear-gradient(to right bottom, rgba($color-white, .8), rgba($color-black, .8));
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 2rem rgba($color-black, .4);
+
+        &--back{
+           transform: rotateY(180deg);
+        }  
+
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    &--1{ 
+        top: 23rem;
+        left: 18rem;
+    }
+
+    &--2{ 
+        top: 28rem;
+        left: 60rem;
+    }
+
+    &--3{ 
+        top: 23rem;
+        left: 102rem;
+    }
+
+    &__list{
+        list-style: none;
+        margin-top: 9rem;
+    }
+
+    &__item{
+        color: $color-white;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid $color-gray-light-2;
+        padding-bottom:1rem;
+    }
+
+    &__button{
+        @include absCenter;
+        width: 90%;
+    }
+
+}
